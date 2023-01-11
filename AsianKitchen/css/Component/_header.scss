@@ -1,0 +1,39 @@
+@media all and (min-width: 1320px) {
+header{
+    display: none;
+}
+}
+
+@media all and (max-width: 767px) {
+    header{
+        display: inline;
+        nav{
+
+            a {
+                cursor: pointer;
+                text-decoration: none !important;
+                color: black !important;
+                &:hover{
+                    color:rgb(13,110,153);
+                }
+            }
+        }
+    }
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1319px) {
+    header{
+        display: inline;
+        nav{
+
+            a {
+                cursor: pointer;
+                text-decoration: none !important;
+                color: black !important;
+                &:hover{
+                    color:rgb(13,110,153);
+                }
+            }
+        }
+    }
+  }

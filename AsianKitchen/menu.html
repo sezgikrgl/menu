@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="app.js">
+     <!-- Fonts -->
+     <link
+     href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap"
+     rel="stylesheet"
+   />
+   <!-- Boostrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Asian Menu</title>
+</head>
+<body>
+    
+
+<header>
+    
+    <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Asian Kitchen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Asian Kitchen</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a id="menu"  href="#" data-bs-dismiss="offcanvas" onclick="Filter.getValue(this)">All</a>
+            </li>
+            <li class="nav-item">
+              <a id="koreamenu" class="nav-link" href="#"  data-bs-dismiss="offcanvas" onclick="Filter.getValue(this)">Korea</a>
+            </li>
+            <li class="nav-item">
+                <a id="japanmenu" class="nav-link" href="#"  data-bs-dismiss="offcanvas" onclick="Filter.getValue(this)">Japan</a>
+              </li>
+              <li class="nav-item">
+                <a id="chinamenu" class="nav-link" href="#" data-bs-dismiss="offcanvas" onclick="Filter.getValue(this)">China</a>
+              </li>
+           
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    </nav>
+    
+</header>
+    <section>
+        <div class="container">
+            <!-- SECTİON -->
+            <h2 class="title">Asian Menü</h2>
+            <div class="options">
+                <button id="menu"   onclick="Filter.getValue(this)">  All   </button>
+                <button id="koreamenu" onclick="Filter.getValue(this)">  Korea </button>
+                <button id="japanmenu" onclick="Filter.getValue(this)">  Japan </button>
+                <button id="chinamenu" onclick="Filter.getValue(this)">  China </button>
+            </div>
+            <div class="menu">
+                <!-- <div class="menu-box">
+                    <img-div>
+                        <img src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg" alt="">
+                    </img-div>
+                    <div class="item">
+                        <div class="item-A">
+                            <div class="text-danger">Tteokbokki</div>
+                            <div class="text-danger">10.99</div>
+                        </div>
+                        <hr>
+                        <div class="item-B">
+                            <p>Spicy rice cakes, serving with fish cake.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-box">
+                   
+                    <img src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg" alt="">
+                    <div class="item">
+                        <div class="item-A">
+                            <div class="text-danger">Tteokbokki</div>
+                            <div class="text-danger">10.99</div>
+                        </div>
+                        <hr>
+                        <div class="item-B">
+                            <p>Spicy rice cakes, serving with fish cake.</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</html>

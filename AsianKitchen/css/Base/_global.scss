@@ -1,0 +1,27 @@
+//
+//
+// media query values
+//
+$mq-xs1: 0;
+$mq-xs2: 420;
+$mq-sm1: 768;
+$mq-sm2: 1024;
+$mq-md: 1320;
+$mq-lg: 1680;
+$mq-xl: 1920;
+
+
+$container-md:1300px; 
+$container-sm: calc(100% - 64px);; 
+$container-xs:calc(100% - 32px);
+//
+//
+// Transform x animation
+//
+@mixin transform-X-animation($duration, $amount) {
+    @include dynamicTransition(transform $duration);
+
+    &:hover {
+        @include dynamicTransform(TranslateX($amount));
+    }
+}

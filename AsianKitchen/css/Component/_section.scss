@@ -1,0 +1,185 @@
+@media all and (min-width: 1320px) {
+section{
+    padding: 30px 40px;
+    font-family: "Zilla Slab", serif;
+    .container{
+       
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .title{
+            font-family: "Great Vibes", cursive;
+            font-size: 3rem;
+            text-align: center;
+            color: #ff6a23;
+        }
+        .options{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            button{  
+                cursor: pointer;
+                border: 1px solid black;
+                border-radius: 3px;
+                padding: 7px 8px;
+                background-color: white;
+            }
+        }
+        .menu{
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap: 20px;
+
+            .menu-box{
+                display: flex;
+                gap: 10px;
+                    
+                img{
+                        width: 172px;
+                        height: 175px;
+                        object-fit: cover;
+                        border: 0.25vh black solid;
+                        border-radius: 10px;
+                }
+            
+                .item{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    .item-A{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+
+        }
+    }
+}
+}
+
+@media all and (max-width: 767px) {
+    section{
+       margin-top:70px;
+       overflow-y: scroll;
+        .container{
+            .title{
+                display: none;
+            }
+            .options{
+                display: none;
+            }
+            .menu{
+                display: grid;
+                grid-template-columns: auto;
+                gap: 5px;
+                .menu-box{
+
+                    display: flex;
+                    gap: 5px;
+                    border: 1px solid #ececec;
+                    box-shadow:-10px -10px 15px rgba(255, 255, 255, 0.5),
+                    10px 10px 15px rgba(70, 70, 70, 0.12);
+                    border-radius: 8px;
+                    height: 100px;
+                    
+
+                    img{
+                        margin: auto 5px;
+                        width: 73px;
+                        height:82px;
+                        object-fit: cover;
+                        border: 0.25vh lightgray solid;
+                        border-radius: 10px;
+                    }
+
+                    .item{
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        .item-A{
+                            padding-right: 8px;
+                            padding-top: 8px;
+                            font-size: 14px;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        hr{
+                            display: none;
+                        }
+                        .item-B{
+                            font-size: small;
+                            overflow: hidden;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1319px) {
+    section{
+       
+        font-family: "Zilla Slab", serif;
+        .container{
+    
+            .title{
+                display: none;
+            }
+            .options{
+                display: none;
+            }
+            .menu{
+                margin-top: 80px;
+                display: grid;
+                grid-template-columns:repeat(2,1fr);
+                gap: 15px;
+    
+                .menu-box{
+                    display: flex;
+                    height: 153px;
+                    gap: 5px;
+                          
+                    img{
+                        margin: auto;
+                        width: 110px;
+                        height: 122px;
+                        object-fit: cover;
+                        border: 0.25vh lightgray solid;
+                        border-radius: 10px;
+                    }
+                
+                    .item{
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+                        .item-A{
+                            font-size: 14px;
+                            padding-right: 8px;
+                            padding-top: 12px;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        hr{
+                            margin-top: 5%;
+                            margin-bottom: 5%;
+                        }
+                        .item-B{
+                            
+                            overflow: hidden;
+                            font-size: small;
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}
